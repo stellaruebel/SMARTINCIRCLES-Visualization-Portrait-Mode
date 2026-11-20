@@ -1,0 +1,24 @@
+/* Portrait layout for tall, narrow displays. */
+@media (orientation: portrait) {
+  .app-shell{padding-inline:clamp(14px,3vw,32px)}
+  .topbar{height:52px}
+  .hero-copy{padding-top:18px}
+  .hero-copy h1{font-size:clamp(25px,5vw,36px);line-height:1.15}
+  .hero-copy .palette-subtitle{font-size:clamp(15px,2.8vw,20px)}
+  .hero-copy .universe-subtitle{font-size:clamp(11px,2vw,15px)}
+  .orbit-stage{height:clamp(400px,72vw,570px);margin-top:12px}
+  .kit-section{width:min(100%,680px);margin-top:32px}
+  .process-heading{padding-top:24px}
+  .process-heading #processTitle{font-size:clamp(26px,5vw,36px)}
+  .process-heading #processSubtitle{max-width:500px;margin-inline:auto;line-height:1.5}
+  .process-frame.is-celulosa-flow,.process-frame.is-micelio-flow{height:650px;min-height:650px}
+  .process-frame.has-projects .project-cards{flex-direction:column}
+  .step-bubble.has-photo{width:min(390px,calc(100% - 18px))}
+}
+@media (orientation: portrait) and (max-width:620px){
+  .orbit-stage{height:420px}
+  .process-frame.is-bioceramica-flow.has-projects .process-stage,.process-frame.is-bioplasticos-flow.has-projects .process-stage{height:650px;min-height:650px}
+  .flow-note-group{width:42%}
+  .process-frame.is-bioplasticos-flow .flow-note-right,.process-frame.is-bioceramica-flow .flow-note-right{right:0}
+  .process-frame.is-bioplasticos-flow .flow-note-left,.process-frame.is-bioceramica-flow .flow-note-left{left:0}
+}

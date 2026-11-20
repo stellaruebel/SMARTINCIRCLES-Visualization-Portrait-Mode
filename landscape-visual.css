@@ -1,0 +1,17 @@
+/* Landscape presentation; the original layout remains available in the main HTML. */
+@media (orientation: landscape) and (min-width: 761px) {
+  .app-shell{max-width:1600px;padding-inline:clamp(24px,4vw,60px)}
+  .topbar{height:48px}
+  .hero-copy{padding-top:12px}
+  .hero-wordmark{margin-top:0}
+  .hero-copy h1{margin:5px 0;font-size:clamp(25px,3.3vw,38px)}
+  .hero-copy .palette-subtitle{font-size:clamp(14px,1.5vw,20px)}
+  .hero-copy .universe-subtitle{font-size:clamp(11px,1.1vw,15px)}
+  .orbit-stage{height:clamp(420px,65vh,570px);margin-top:0}
+  .kit-section{margin-top:24px}
+  .process-heading.is-celulosa,.process-heading.is-micelio,.process-heading{padding-top:16px;padding-bottom:8px}
+  .process-heading.is-celulosa .back-button,.process-heading.is-micelio .back-button{top:18px}
+  .process-heading .celulosa-process-brand{margin-bottom:6px}
+  .process-heading #processTitle{font-size:clamp(26px,3vw,36px)}
+  .process-frame.is-celulosa-flow,.process-frame.is-micelio-flow{height:650px;min-height:650px}
+}

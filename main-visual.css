@@ -1,0 +1,427 @@
+:root{--ink:#26332e;--muted:#818d83;--line:#e4e9e3;--paper:#f6f8f4;--green:#388b7e;--font:'DM Sans',sans-serif;--display:'Manrope',sans-serif}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-webkit-font-smoothing:antialiased}.app-shell{max-width:1512px;min-height:100vh;padding:0 54px;margin:0 auto;display:flex;flex-direction:column}.topbar{height:72px;flex:none;border-bottom:1px solid #e5eae4;display:flex;align-items:center;justify-content:space-between}.wordmark{display:flex;align-items:center;gap:9px;color:#3b5149;text-decoration:none;font:800 12px var(--display);letter-spacing:1.1px}.wordmark img{width:29px;height:29px;object-fit:contain}.top-context{display:flex;align-items:center;gap:8px;color:#929c91;font-size:8px;font-weight:700;letter-spacing:1.15px}.status-dot,.bottom-dot{width:6px;height:6px;border-radius:50%;background:#69a18d;display:inline-block}.top-action{background:#fff;border:1px solid #e1e7df;border-radius:7px;color:#748277;padding:8px 11px;font:600 10px var(--font);cursor:pointer}.top-action span{margin-left:4px}.view{display:none;flex:1;animation:fade-in .28s ease}.view.is-active{display:block}.hero-copy{text-align:center;padding-top:36px}.overline{display:flex;justify-content:center;align-items:center;gap:9px;color:#879488;font-size:8px;font-weight:700;letter-spacing:1.05px}.overline i{width:3px;height:3px;background:#bcc7bc;border-radius:50%}h1{font:700 33px/1.2 var(--display);letter-spacing:-1.25px;color:#26352f;margin:12px 0 8px}.title-spark{font-size:17px;color:#53998b;vertical-align:5px;margin-left:7px}.hero-copy p,.process-heading>p{font-size:11px;color:#818c81;margin:0}.orbit-stage{height:570px;max-width:1080px;margin:6px auto 0;position:relative}.orbit-lines{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}.orbit-lines ellipse{fill:none;stroke:#cddbd1;stroke-width:1}.orbit-lines .orbit-dash{stroke:#e0e9df;stroke-dasharray:3 7}.orbit-glow{position:absolute;width:420px;height:420px;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,#e4eee5a8 0,transparent 69%);pointer-events:none}.central-logo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:205px;height:205px;border-radius:50%;background:#fff;border:1px solid #dce6dc;box-shadow:0 9px 33px #2d513a15;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:2}.central-ring{width:104px;height:104px;border-radius:50%;background:#f5f8f3;display:grid;place-items:center}.central-ring img{width:96px;height:96px;object-fit:contain}.central-logo>span{font:800 9px/1.25 var(--display);letter-spacing:1.5px;text-align:center;color:#48675d;margin-top:3px}.central-logo small{font-size:7px;color:#a0aa9f;letter-spacing:1px;margin-top:6px}.topic-circles{position:absolute;inset:0}.topic-circle{position:absolute;width:150px;height:150px;margin:-75px 0 0 -75px;border-radius:50%;border:1px solid var(--tone-border);background:var(--tone-fill);color:var(--tone-text);box-shadow:0 5px 15px #34463210;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;cursor:pointer;transition:transform .23s,box-shadow .23s,border-color .2s;z-index:3}.topic-circle:hover,.topic-circle:focus-visible{transform:scale(1.07);box-shadow:0 10px 25px #34463222;border-color:var(--tone-text);outline:none}.topic-circle .topic-index{font-size:8px;font-weight:700;letter-spacing:1px;opacity:.63;margin-bottom:9px}.topic-circle .topic-name{font:700 13px/1.35 var(--display);max-width:120px}.topic-circle .topic-open{font-size:7px;letter-spacing:1px;font-weight:700;margin-top:10px;opacity:.65}.topic-circle::after{content:'↗';position:absolute;right:23px;top:20px;font-size:12px;opacity:.48}.topic-circle:nth-child(1){--tone-fill:#eaf2e8;--tone-border:#d4e2d1;--tone-text:#587856}.topic-circle:nth-child(2){--tone-fill:#f5eee1;--tone-border:#e9dec6;--tone-text:#9b7e4d}.topic-circle:nth-child(3){--tone-fill:#e8f0ee;--tone-border:#d0e0dc;--tone-text:#477f77}.topic-circle:nth-child(4){--tone-fill:#f2e9ef;--tone-border:#e6d6e0;--tone-text:#906d87}.orbit-note{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:7px;color:#98a196;font-size:9px;white-space:nowrap}.note-spark{color:#87a083;font-size:12px}.home-bottom,.process-bottom{height:40px;border-top:1px solid #e5eae4;display:flex;align-items:center;justify-content:space-between;color:#9aa398;font-size:8px;font-weight:700;letter-spacing:.7px}.home-bottom>span:first-child,.process-bottom>span{display:flex;align-items:center;gap:7px}.home-bottom .bottom-dot,.process-bottom .bottom-dot{width:5px;height:5px}.site-footer{height:38px;display:flex;align-items:center;justify-content:space-between;color:#adb5aa;font-size:8px;letter-spacing:.6px}.process-heading{padding:24px 0 14px;text-align:center;position:relative}.back-button{position:absolute;left:0;top:30px;background:#fff;border:1px solid #e2e8e0;border-radius:7px;color:#738075;padding:8px 10px;font:600 9px var(--font);cursor:pointer}.back-button span{font-size:13px;margin-right:5px}.process-kicker{color:#8e9b8d;font-size:8px;font-weight:700;letter-spacing:1.2px}.process-heading h1{margin:7px 0 5px;font-size:26px}.process-frame{height:min(675px,calc(100vh - 250px));min-height:520px;position:relative;overflow:hidden;border:1px solid #e1e8e0;border-radius:11px;background:#fbfcf9;box-shadow:0 3px 12px #3445320a}.process-grid{position:absolute;inset:0;background-image:radial-gradient(#d9e2d8 .8px,transparent .8px);background-size:20px 20px;opacity:.72}.process-stage{position:absolute;inset:0}.process-arrows{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}.process-edge{fill:none;stroke:var(--accent,#7ba08d);stroke-width:1.7;opacity:.76}.process-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:142px;height:142px;border:1px solid #e0e8df;background:#fbfcf9;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:1;box-shadow:0 3px 14px #3f654510}.process-center img{width:67px;height:67px;object-fit:contain;opacity:.88}.process-center span{font-size:7px;color:#8a9b8b;line-height:1.35;letter-spacing:1px;text-align:center;font-weight:700;margin-top:2px}.process-nodes{position:absolute;inset:0}.process-node{position:absolute;left:0;top:0;width:180px;height:180px;margin:0;padding:18px 15px;border:1px solid var(--tone-border);background:var(--tone-fill);border-radius:50%;color:var(--tone-text);box-shadow:0 5px 18px #34463212;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;cursor:pointer;z-index:2;transition:width .25s,height .25s,border-radius .25s,box-shadow .2s,background .2s;overflow:hidden}.process-node:hover{box-shadow:0 9px 23px #34463220}.process-node:focus-visible{outline:2px solid var(--tone-text);outline-offset:4px}.process-node.expanded{width:290px;height:auto;min-height:220px;padding:21px 21px 19px;border-radius:15px;z-index:5;box-shadow:0 13px 32px #30422d28}.step-index{width:24px;height:24px;border:1px solid color-mix(in srgb,var(--tone-text) 25%,transparent);border-radius:50%;display:grid;place-items:center;font-size:8px;font-weight:700;opacity:.78;margin-bottom:9px;flex:none}.step-title{font:700 13px/1.35 var(--display);letter-spacing:-.2px;max-width:145px}.step-hint{font-size:7px;font-weight:700;letter-spacing:.8px;margin-top:11px;opacity:.62}.step-description{display:none;font-size:10px;line-height:1.65;color:#506057;margin:12px 0 0;text-align:left;animation:fade-in .22s ease}.expanded .step-description{display:block}.expanded .step-title{max-width:none;font-size:14px}.expanded .step-hint{display:none}.process-tip{position:absolute;left:15px;bottom:13px;display:flex;align-items:center;gap:7px;color:#97a194;font-size:8px;z-index:6}.process-tip span{color:#82a086;font-size:12px}.process-bottom{margin-top:3px;border:0}.process-bottom button{background:none;border:0;color:#678271;font:600 9px var(--font);cursor:pointer}.process-bottom button span{margin-left:6px}.process-view .process-bottom{height:42px}.home-view .home-bottom{margin-top:0}
+@keyframes fade-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:900px){.app-shell{padding:0 30px}.orbit-stage{height:550px}.topic-circle{width:136px;height:136px;margin:-68px 0 0 -68px}.central-logo{width:190px;height:190px}.central-ring{width:96px;height:96px}.central-ring img{width:88px;height:88px}.process-frame{height:calc(100vh - 255px)}.process-node{width:164px;height:164px}.process-node.expanded{width:274px}}
+@media(max-width:620px){.app-shell{padding:0 16px}.topbar{height:60px}.wordmark{font-size:10px;letter-spacing:.7px}.wordmark img{width:25px;height:25px}.top-context{font-size:6px;letter-spacing:.55px}.hero-copy{padding-top:29px}.overline{font-size:7px;gap:6px}h1{font-size:27px}.hero-copy p{max-width:300px;margin:0 auto;font-size:10px;line-height:1.6}.orbit-stage{height:540px;margin-top:5px}.orbit-lines{opacity:.65}.central-logo{width:142px;height:142px}.central-ring{width:75px;height:75px}.central-ring img{width:68px;height:68px}.central-logo>span{font-size:7px}.central-logo small{font-size:6px}.topic-circle{width:104px;height:104px;margin:-52px 0 0 -52px}.topic-circle .topic-index{font-size:7px;margin-bottom:5px}.topic-circle .topic-name{font-size:10px;max-width:82px}.topic-circle .topic-open{font-size:6px;margin-top:6px}.topic-circle::after{right:14px;top:11px;font-size:10px}.orbit-note{font-size:8px;bottom:1px}.home-bottom,.process-bottom{font-size:6px;letter-spacing:.35px}.process-heading{padding:20px 0 13px}.process-heading h1{font-size:22px}.process-heading>p{font-size:9px}.back-button{position:static;display:block;width:max-content;margin:0 auto 13px;padding:7px 9px;font-size:8px}.process-frame{height:calc(100vh - 250px);min-height:480px;max-height:620px}.process-center{width:92px;height:92px}.process-center img{width:45px;height:45px}.process-center span{font-size:5px}.process-node{width:122px;height:122px;padding:10px}.process-node.expanded{width:min(260px,78vw);min-height:190px;padding:18px}.step-index{width:20px;height:20px;font-size:7px;margin-bottom:6px}.step-title{font-size:10px;max-width:97px}.step-hint{font-size:6px;margin-top:7px}.expanded .step-title{font-size:12px}.step-description{font-size:9px;margin-top:9px}.process-tip{left:9px;bottom:9px;font-size:7px}.site-footer{font-size:6px}.process-view .process-bottom{height:35px}}
+.process-edge{stroke-width:4;opacity:.95}
+.topic-circle .topic-name{font-size:16px;line-height:1.3;max-width:124px}
+@media(max-width:620px){.topic-circle .topic-name{font-size:11px;max-width:82px}}
+.central-logo{justify-content:center}.central-ring{width:194px;height:194px;background:transparent}.central-ring img{width:194px;height:194px}.central-logo>span{margin-top:-2px}
+@media(max-width:620px){.central-ring{width:136px;height:136px}.central-ring img{width:136px;height:136px}.central-logo>span{margin-top:-1px}}
+.topic-circle.topic-celulosa{background-image:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,.16)),url("IMG_7036.jpeg");background-size:cover;background-position:center;color:#fff;border-color:#ffffff80}
+.topic-circle.topic-celulosa .topic-name,.topic-circle.topic-celulosa .topic-open{color:#fff}
+.topic-circle.topic-bioceramica{background-image:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,.16)),url("IMG_7370.PNG");background-size:cover;background-position:center;color:#fff;border-color:#ffffff80}
+.topic-circle.topic-bioceramica .topic-name,.topic-circle.topic-bioceramica .topic-open{color:#fff}
+.orbit-stage{height:582px}.orbit-note{bottom:-10px}
+@media(max-width:620px){.orbit-stage{height:552px}.orbit-note{bottom:-10px}}
+.topic-circle::after{content:none}
+:root{--paper:#cfe7dd}
+:root{--paper:#eaf5f3}
+:root{--paper:#cfe7dd}
+.central-logo{background:#3f9588;border-color:#3f9588;box-shadow:0 9px 33px #24584c30}
+.central-ring img{filter:brightness(0) invert(1)}
+.wordmark img{filter:brightness(0) invert(1);background:#3f9588;border-radius:50%;padding:4px}
+.central-logo{background:var(--paper);border-color:var(--paper);box-shadow:none}
+.process-node.step-cellulose-photo{background-image:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,.16)),url("IMG_7036.jpeg");background-size:cover;background-position:center;color:#fff;border-color:#ffffff80}
+.process-node.step-cellulose-photo .step-description{color:#fff}
+.process-node.step-cellulose-photo .step-index{border-color:#ffffff80}
+.process-node.step-bioceramica-photo{background-image:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,.16)),url("IMG_7370.PNG");background-size:cover;background-position:center;color:#fff;border-color:#ffffff80}
+.process-node.step-bioceramica-photo .step-description{color:#fff}
+.process-node.step-bioceramica-photo .step-index{border-color:#ffffff80}
+.home-view{position:relative}
+.definition-circle{position:absolute;left:clamp(20px,calc(25% - 177px),190px);top:22px;width:194px;height:194px;border:1px solid #b4d5c8;border-radius:50%;background:linear-gradient(145deg,#eef8f1,#cee8dc);color:#416c5c;box-shadow:0 8px 24px #37665418;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px;cursor:pointer;z-index:5;font-family:var(--font);transition:width .24s,height .24s,border-radius .24s,box-shadow .2s,background .2s}
+.definition-circle:hover,.definition-circle:focus-visible{outline:none;border-color:#83b29e;box-shadow:0 11px 28px #37665425}
+.definition-heading{font:700 15px/1.3 var(--display);max-width:132px}
+.definition-prompt{font-size:7px;letter-spacing:.8px;font-weight:700;margin-top:10px;opacity:.7}
+.definition-prompt i{font-style:normal;font-size:11px;margin-left:4px}
+.definition-copy{display:none;font-size:11px;line-height:1.6;text-align:left;color:#486456;margin-top:15px}
+.definition-circle.expanded{width:310px;height:auto;min-height:210px;border-radius:18px;align-items:flex-start;text-align:left;padding:23px 24px;box-shadow:0 15px 34px #2e594528}
+.definition-circle.expanded .definition-heading{font-size:15px;max-width:none}
+.definition-circle.expanded .definition-prompt{display:none}
+.definition-circle.expanded .definition-copy{display:block;animation:fade-in .22s ease}
+@media(max-width:900px) and (min-width:761px){.definition-circle{left:max(12px,calc(25% - 160px));width:160px;height:160px}}
+@media(max-width:760px) and (min-width:621px){.definition-circle{position:relative;left:auto;top:auto;width:156px;height:156px;margin:14px 0 0 14px}.hero-copy{padding-top:18px}}
+@media(max-width:620px){.definition-circle{width:136px;height:136px}}
+@media(max-width:620px){.definition-circle{position:relative;left:auto;top:auto;width:120px;height:120px;margin:14px 0 0 12px;padding:12px}.definition-heading{font-size:10px;max-width:82px}.definition-prompt{font-size:6px;margin-top:7px}.definition-circle.expanded{width:min(310px,calc(100% - 12px));height:auto;min-height:180px;padding:19px}.definition-circle.expanded .definition-heading{font-size:13px}.definition-circle.expanded .definition-copy{font-size:10px}.hero-copy{padding-top:18px}}
+
+@media(max-width:620px){.definition-circle{width:136px;height:136px}}
+
+.definition-circle.expanded{width:194px;min-height:260px}
+@media(max-width:900px) and (min-width:761px){.definition-circle.expanded{width:160px;min-height:280px}}
+@media(max-width:760px) and (min-width:621px){.definition-circle.expanded{width:156px;min-height:260px}}
+@media(max-width:620px){.definition-circle.expanded{width:136px;min-height:250px}}
+
+.definition-circles{--definition-width:194px;position:absolute;top:22px;left:0;right:0;height:var(--definition-width);pointer-events:none;z-index:5}.definition-circles .definition-circle{position:absolute;top:0;left:clamp(20px,calc(25% - 177px),190px);right:auto;width:var(--definition-width);height:var(--definition-width);margin:0;pointer-events:auto}.definition-circles .biomaterials-circle{left:auto;right:clamp(20px,calc(25% - 177px),190px)}.definition-circles .definition-circle.expanded{width:var(--definition-width);height:auto;min-height:260px;align-self:flex-start}@media(max-width:900px) and (min-width:761px){.definition-circles{--definition-width:160px}.definition-circles .definition-circle{left:max(12px,calc(25% - 160px))}.definition-circles .biomaterials-circle{left:auto;right:max(12px,calc(25% - 160px))}}@media(max-width:760px){.definition-circles{--definition-width:156px;position:relative;top:auto;left:auto;right:auto;height:auto;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin:14px 14px 0;pointer-events:auto}.definition-circles .definition-circle,.definition-circles .biomaterials-circle{position:relative;inset:auto;flex:0 0 var(--definition-width);margin:0}}@media(max-width:620px){.definition-circles{--definition-width:min(136px,calc((100vw - 68px)/2));margin:14px 12px 0}.definition-circles .definition-circle.expanded{min-height:250px}}
+
+.topic-circle.topic-bioplasticos{background-image:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,.16)),url("99b52502-6261-4660-8e7a-dcbaded3a29c.JPG");background-size:cover;background-position:center;color:#fff;border-color:#ffffff80}.topic-circle.topic-bioplasticos .topic-name,.topic-circle.topic-bioplasticos .topic-open{color:#fff}
+
+.process-node.step-bioplasticos-photo{background-image:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,.16)),url("99b52502-6261-4660-8e7a-dcbaded3a29c.JPG");background-size:cover;background-position:center;color:#fff;border-color:#ffffff80}.process-node.step-bioplasticos-photo .step-description{color:#fff}.process-node.step-bioplasticos-photo .step-index{border-color:#ffffff80}
+
+.topic-circle.topic-micelio{background-image:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,.16)),url("cab42831-64a5-49fd-b8fe-6950addcb47a.JPG");background-size:cover;background-position:center;color:#fff;border-color:#ffffff80}.topic-circle.topic-micelio .topic-name,.topic-circle.topic-micelio .topic-open{color:#fff}.process-node.step-micelio-photo{background-image:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,.16)),url("cab42831-64a5-49fd-b8fe-6950addcb47a.JPG");background-size:cover;background-position:center;color:#fff;border-color:#ffffff80}.process-node.step-micelio-photo .step-description{color:#fff}.process-node.step-micelio-photo .step-index{border-color:#ffffff80}
+
+.orbit-lines ellipse{stroke:#89ab9a;stroke-width:1.5}.orbit-lines .orbit-dash{stroke:#a9c5b7;stroke-dasharray:3 6}.topic-circle{width:176px;height:176px;margin:-88px 0 0 -88px}.topic-circle .topic-name{font-size:17px;max-width:138px}@media(max-width:900px){.topic-circle{width:160px;height:160px;margin:-80px 0 0 -80px}}@media(max-width:620px){.topic-circle{width:112px;height:112px;margin:-56px 0 0 -56px}.topic-circle .topic-name{font-size:12px;max-width:90px}}
+
+.process-node.step-eggshells-photo{background-image:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,.16)),url("Eggshells.jpeg");background-size:cover;background-position:center;color:#fff;border-color:#ffffff80}.process-node.step-eggshells-photo .step-description{color:#fff}.process-node.step-eggshells-photo .step-index{border-color:#ffffff80}
+
+.process-node.step-rice-photo{background-image:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,.16)),url("rice grains.jpeg");background-size:cover;background-position:center;color:#fff;border-color:#ffffff80}.process-node.step-rice-photo .step-description{color:#fff}.process-node.step-rice-photo .step-index{border-color:#ffffff80}
+.process-node.step-cascara-photo{background-image:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,.16)),url("IMG_0322.JPEG");background-size:cover;background-position:center;color:#fff;border-color:#ffffff80}
+.process-node.step-biopolymers-photo{background-image:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,.16)),url("biopolymers new.avif");background-size:cover;background-position:center;color:#fff;border-color:#ffffff80}
+.process-node.step-biopolymers-photo .step-description{color:#fff}
+.process-node.step-biopolymers-photo .step-index{border-color:#ffffff80}.process-node.step-cascara-photo .step-description{color:#fff}.process-node.step-cascara-photo .step-index{border-color:#ffffff80}
+.process-node.step-mascaras-photo{background-image:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,.16)),url("IMG_9438.JPEG");background-size:cover;background-position:center;color:#fff;border-color:#ffffff80}.process-node.step-mascaras-photo .step-description{color:#fff}.process-node.step-mascaras-photo .step-index{border-color:#ffffff80}
+.hero-copy .palette-subtitle{font-size:16px;font-weight:600;color:#536c5c;margin-top:3px}
+.hero-copy .universe-subtitle{font-size:11px;color:#738579;margin-top:6px}
+@media(max-width:620px){.hero-copy .palette-subtitle{font-size:14px}.hero-copy .universe-subtitle{font-size:9px;margin-top:5px}}
+
+/* Cultivated materials note beside the orbit diagram */
+.cultivated-note{position:absolute;left:82%;top:50%;transform:translateY(-50%);width:190px;display:flex;flex-direction:column;align-items:center;gap:6px;color:#476253;text-align:center;z-index:2}
+.cultivated-note strong{font:700 15px/1.25 var(--display);letter-spacing:-.3px}
+.cultivated-note>span{font-size:10px;color:#7b8d7e;line-height:1.45}
+.connected-leaves{width:58px;height:44px;overflow:visible;margin-bottom:4px}
+.leaf-stem,.leaf-vein{fill:none;stroke:#668f70;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.leaf-vein{stroke:#91ad86;stroke-width:1}
+.leaf-shape{fill:#91b486;stroke:#668f70;stroke-width:1.2;stroke-linejoin:round}
+.leaf-two{fill:#b4c995}
+@keyframes leaf-sway{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(3deg)}}
+@media(max-width:620px){.cultivated-note{left:50%;top:auto;bottom:26px;transform:translateX(-50%);width:auto;align-items:center;gap:3px;text-align:center}.cultivated-note strong{font-size:11px}.cultivated-note>span{font-size:8px}.connected-leaves{width:36px;height:27px;margin-bottom:1px}.orbit-stage{height:590px}.orbit-note{bottom:1px}}
+
+/* Cooked materials note, mirrored across the orbit from cultivated materials */
+.cooked-note{position:absolute;left:0;top:50%;transform:translateY(-50%);width:190px;display:flex;flex-direction:column;align-items:center;gap:6px;color:#476253;text-align:center;z-index:2}
+.cooked-note strong{font:700 15px/1.25 var(--display);letter-spacing:-.3px}
+.cooked-note>span{font-size:10px;color:#7b8d7e;line-height:1.45}
+.steaming-bowl{width:58px;height:44px;overflow:visible;margin-bottom:4px}
+.steam{fill:none;stroke:#84a38d;stroke-width:2;stroke-linecap:round}
+.bowl-rim,.bowl-base{fill:none;stroke:#668f70;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.bowl-body{fill:#bfd0b4;stroke:#668f70;stroke-width:1.7;stroke-linejoin:round}
+@keyframes steam-rise{0%{opacity:0;stroke-dashoffset:15;transform:translateY(5px)}35%{opacity:.9}100%{opacity:0;stroke-dashoffset:0;transform:translateY(-4px)}}
+@media(max-width:620px){.cooked-note{left:50%;top:auto;bottom:94px;transform:translateX(-50%);width:auto;gap:3px}.cooked-note strong{font-size:11px}.cooked-note>span{font-size:8px}.steaming-bowl{width:36px;height:27px;margin-bottom:1px}}
+
+/* Four-part center mark on the main materials overview */
+.home-view .central-logo{width:300px;height:300px;background:transparent;border:0;box-shadow:none;display:block;border-radius:0}
+.home-view .central-ring{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;background:transparent}
+.home-view .central-ring img{width:58px;height:58px;object-fit:contain}
+.core-symbol{position:absolute;width:78px;display:flex;flex-direction:column;align-items:center;gap:3px;color:#557866;text-align:center}
+.core-symbol svg{width:34px;height:34px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.core-symbol span{font:600 9px/1.2 var(--font);color:#647a6b;white-space:nowrap}
+.core-top{left:50%;top:3px;transform:translateX(-50%)}
+.core-right{right:-1px;top:50%;transform:translateY(-50%)}
+.core-bottom{left:50%;bottom:3px;transform:translateX(-50%)}
+.core-left{left:-1px;top:50%;transform:translateY(-50%)}
+@media(max-width:620px){.home-view .central-logo{width:220px;height:220px}.home-view .central-ring,.home-view .central-ring img{width:46px;height:46px}.core-symbol{width:64px;gap:2px}.core-symbol svg{width:27px;height:27px}.core-symbol span{font-size:7px}.core-top{top:0}.core-right{right:-3px}.core-bottom{bottom:0}.core-left{left:-3px}}
+
+/* Compact, unified center badge */
+.home-view .central-logo{width:250px;height:250px;border-radius:50%;background:#e8f1e5;border:1px solid #d4e3d1;box-shadow:0 6px 18px #496d4d12}
+.home-view .central-ring img{filter:none}
+.core-top{top:12px}
+.core-right{right:5px}
+.core-bottom{bottom:12px}
+.core-left{left:5px}
+@media(max-width:620px){.home-view .central-logo{width:190px;height:190px}.home-view .central-ring,.home-view .central-ring img{width:42px;height:42px}.core-top{top:6px}.core-right{right:1px}.core-bottom{bottom:6px}.core-left{left:1px}}
+
+.hero-wordmark{display:flex;align-items:center;justify-content:center;gap:8px;margin:14px auto 0;color:#3b5149;font:800 11px/1 var(--display);letter-spacing:1.2px}
+.hero-wordmark img{width:27px;height:27px;object-fit:contain}
+.hero-wordmark+h1{margin-top:8px}
+@media(max-width:620px){.hero-wordmark{gap:6px;margin-top:11px;font-size:9px}.hero-wordmark img{width:22px;height:22px}}
+.cooked-note>span,.cultivated-note>span{font-size:12px}
+@media(max-width:620px){.cooked-note>span,.cultivated-note>span{font-size:9px}}
+.hero-copy .palette-subtitle{font-size:20px}
+.hero-copy .universe-subtitle{font-size:15px}
+@media(max-width:620px){.hero-copy .palette-subtitle{font-size:17px}.hero-copy .universe-subtitle{font-size:12px}}
+
+.celulosa-process-brand{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto 8px;color:#3b5149;font:800 11px/1 var(--display);letter-spacing:1.2px}
+.celulosa-process-brand img{width:27px;height:27px;object-fit:contain}
+.celulosa-process-type{display:flex;align-items:center;justify-content:center;gap:7px;margin:0 auto 4px;color:#647a6b;font:600 11px/1.25 var(--font)}
+.celulosa-process-type .steaming-bowl{width:33px;height:25px;margin:0}
+.process-heading.is-celulosa .celulosa-process-type{margin-bottom:0}
+.process-heading.is-micelio .celulosa-process-type{margin-bottom:0}
+.process-heading.is-bioplasticos .celulosa-process-type{margin-bottom:0}
+.process-heading.is-bioceramica .celulosa-process-type{margin-bottom:0}
+.process-heading.is-celulosa #processTitle{margin-top:1px}
+
+.process-frame.is-celulosa-flow{height:800px;min-height:800px;max-height:none}
+.process-frame.is-celulosa-flow .process-edge{stroke-dasharray:2 7;stroke-linecap:round;opacity:.9}
+.process-frame.is-celulosa-flow .process-tip{display:none}
+@media(max-width:620px){.process-frame.is-celulosa-flow .process-node{width:106px;height:106px;padding:8px}.process-frame.is-celulosa-flow .process-node.expanded{width:min(260px,78vw);height:auto;min-height:190px;padding:18px}}
+.process-frame.is-celulosa-flow .step-index{display:none}
+
+.celulosa-side-notes{position:absolute;inset:0;z-index:2;pointer-events:none}
+.celulosa-side-notes[hidden]{display:none}
+.flow-note-group{position:absolute;top:calc(26% - 38px);width:clamp(125px,18%,190px);display:flex;flex-direction:column;gap:13px;color:#617c69}
+.flow-note-left{left:0}.flow-note-right{right:0}
+.flow-note-row{display:flex;align-items:center;gap:7px;min-height:31px;font:600 10px/1.25 var(--font)}
+.flow-note-icon{width:25px;height:25px;flex:none;fill:none;stroke:#668c70;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;overflow:visible}
+.resources-icon{animation:none}
+.book-page{fill:#dce9d7;transform-origin:17px 22px;animation:page-open 3.6s ease-in-out infinite alternate}
+.pin-icon{animation:pin-bob 2s ease-in-out infinite}
+.people-icon{animation:people-breathe 3s ease-in-out infinite alternate}
+@keyframes resource-turn{to{transform:rotate(360deg)}}
+@keyframes page-open{from{transform:rotateY(0)}to{transform:rotateY(-22deg)}}
+@keyframes pin-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+@keyframes people-breathe{from{transform:translateY(0)}to{transform:translateY(-1.5px)}}
+@media(max-width:900px){.flow-note-group{top:27%;width:48%;gap:6px}.flow-note-left{left:0}.flow-note-right{right:0}.flow-note-row{font-size:9px;gap:5px}.flow-note-icon{width:22px;height:22px}}
+@media(max-width:620px){.process-frame.is-celulosa-flow .process-node{width:106px;height:106px;padding:8px}.process-frame.is-celulosa-flow .process-node.expanded{width:min(260px,78vw);height:auto;min-height:190px;padding:18px}.flow-note-group{top:27%;width:49%;gap:7px}.flow-note-row{align-items:flex-start;font-size:8px;line-height:1.25}.flow-note-icon{width:18px;height:18px}}
+
+@media(min-width:901px){
+  .flow-note-group{width:clamp(118px,14%,170px)}
+  .flow-note-left{left:calc(23% - 102px - clamp(118px,14%,170px))}
+  .flow-note-right{right:calc(23% - 102px - clamp(118px,14%,170px))}
+  .flow-note-row{font-size:12px}
+}
+@media(min-width:901px) and (max-width:1200px){
+  .flow-note-group{width:120px}
+  .flow-note-left{left:calc(23% - 102px - 120px)}
+  .flow-note-right{right:calc(23% - 102px - 120px)}
+  .flow-note-row{font-size:11px}
+}
+@media(max-width:900px){.flow-note-row{font-size:11px;line-height:1.3}}
+@media(max-width:620px){.flow-note-row{font-size:9px;line-height:1.25}}
+@media(min-width:901px) and (max-width:1000px){.flow-note-group{width:90px}.flow-note-left{left:calc(23% - 102px - 90px)}.flow-note-right{right:calc(23% - 102px - 90px)}.flow-note-row{font-size:9px;gap:4px}.flow-note-icon{width:18px;height:18px}}
+@media(min-width:1101px){.flow-note-left{left:calc(27% - 102px - clamp(118px,14%,170px))}.flow-note-right{right:calc(27% - 102px - clamp(118px,14%,170px))}}
+
+.process-frame.is-celulosa-flow .celulosa-input-node.expanded{width:220px;height:220px;min-height:220px}
+@media(max-width:620px){.process-frame.is-celulosa-flow .celulosa-input-node.expanded{width:min(220px,78vw);height:220px;min-height:220px}}
+
+/* Process descriptions appear in separate speech bubbles above each circle. */
+.process-node.expanded{width:unset;height:unset;min-height:unset;padding:18px 15px;border-radius:50%;z-index:3;box-shadow:0 5px 18px #34463212}
+.process-node.is-selected{box-shadow:0 8px 22px #34463225;border-color:var(--tone-text)}
+.step-bubble{position:absolute;z-index:10;left:50%;transform:translate(-50%,-100%);width:290px;max-width:min(290px,calc(100% - 16px));padding:13px 15px;border:1px solid color-mix(in srgb,var(--tone-text) 38%,white);border-radius:13px;background:#fff;color:#506057;box-shadow:0 8px 24px #30422d20;text-align:left;pointer-events:none}
+.step-bubble[hidden]{display:none}
+.step-bubble::after{content:"";position:absolute;left:50%;bottom:-7px;width:13px;height:13px;transform:translateX(-50%) rotate(45deg);background:#fff;border-right:1px solid color-mix(in srgb,var(--tone-text) 38%,white);border-bottom:1px solid color-mix(in srgb,var(--tone-text) 38%,white)}
+.step-bubble .step-description{display:block;margin:0;color:#506057;font-size:12px;line-height:1.55;text-align:left;animation:fade-in .18s ease}
+.step-bubble .bubble-title{display:block;font:700 13px var(--display);color:var(--ink);margin:0 0 6px;letter-spacing:.4px;text-transform:uppercase}
+.process-frame.has-open-bubble:not(.is-celulosa-flow){height:900px;min-height:900px;max-height:none}
+.process-frame.is-celulosa-flow .flow-note-group{top:calc(32% - 38px)}
+@media(max-width:900px){
+  .process-frame.has-open-bubble:not(.is-celulosa-flow){height:900px;min-height:900px;max-height:none}
+  .process-frame.is-celulosa-flow{height:950px;min-height:950px;max-height:none}
+  .process-frame.is-celulosa-flow .flow-note-group{top:42%}
+}
+@media(max-width:620px){.step-bubble{width:280px;padding:11px 12px}.step-bubble .step-description{font-size:11px;line-height:1.5}}
+
+/* Shared page palette: white surfaces and dark teal interface text */
+:root{--paper:#fff;--ink:#164b43;--muted:#164b43;--green:#164b43}
+body{background:#fff;color:#164b43}
+.process-frame,.process-center{background:#fff}
+.hero-copy,.hero-copy *,.topbar,.topbar *,.home-bottom,.home-bottom *,.orbit-note,.orbit-note *,.site-footer,.site-footer *, .process-heading,.process-heading *,.process-bottom,.process-bottom *,.process-tip,.process-tip *,.cultivated-note,.cultivated-note *,.cooked-note,.cooked-note *,.flow-note-group,.flow-note-group *{color:#164b43}
+.kit-copy,.kit-copy *,.kit-details,.kit-details *,.step-bubble,.step-bubble *{color:#164b43}
+.process-heading.is-celulosa{padding-top:42px;padding-bottom:2px}
+.process-heading.is-celulosa .back-button{top:44px}
+.process-frame.is-celulosa-flow .process-grid{display:none}
+
+.process-frame.is-micelio-flow{height:800px;min-height:800px;max-height:none}
+.process-frame.is-micelio-flow .process-edge{stroke-dasharray:2 7;stroke-linecap:round;opacity:.9}
+.process-frame.is-micelio-flow .is-inoculation-node{width:116px;height:116px;background:#e8f2df;border:1px solid #b9d4a9;color:#4c7548;box-shadow:0 6px 18px #385b331a}
+.process-frame.is-micelio-flow .is-inoculation-node .step-title{max-width:86px;font-size:11px;line-height:1.25}
+@media(max-width:900px){.process-frame.is-micelio-flow{height:900px;min-height:900px;max-height:none}.process-frame.is-micelio-flow .is-inoculation-node{width:102px;height:102px}}
+@media(max-width:620px){.process-frame.is-micelio-flow .is-inoculation-node{width:86px;height:86px}.process-frame.is-micelio-flow .is-inoculation-node .step-title{max-width:70px;font-size:9px}}
+
+.process-heading.is-micelio{padding-top:42px;padding-bottom:2px}
+.process-heading.is-micelio .back-button{top:44px}
+.process-heading.is-micelio #processTitle{margin-top:1px}
+.process-heading.is-micelio .celulosa-process-type{margin-bottom:0}
+.process-frame.is-micelio-flow .flow-note-group{top:calc(25% - 38px)}
+.process-frame.is-micelio-flow .flow-note-left{left:calc(25% - 102px - clamp(118px,14%,170px))}
+.process-frame.is-micelio-flow .flow-note-right{right:calc(25% - 102px - clamp(118px,14%,170px))}
+@media(min-width:901px) and (max-width:1200px){.process-frame.is-micelio-flow .flow-note-left{left:calc(25% - 102px - 120px)}.process-frame.is-micelio-flow .flow-note-right{right:calc(25% - 102px - 120px)}}
+@media(min-width:901px) and (max-width:1000px){.process-frame.is-micelio-flow .flow-note-left{left:calc(25% - 102px - 90px)}.process-frame.is-micelio-flow .flow-note-right{right:calc(25% - 102px - 90px)}}
+@media(max-width:900px){.process-frame.is-micelio-flow .flow-note-group{top:42%}}
+@media(max-width:620px){.process-frame.is-micelio-flow .process-node:not(.is-inoculation-node){width:110px;height:110px}}
+
+.process-frame.is-micelio-flow .flow-note-group{top:calc(30% - 38px)}
+.process-frame.is-micelio-flow .flow-note-left{left:calc(var(--micelio-input-side,25%) - 102px - clamp(118px,14%,170px))}
+.process-frame.is-micelio-flow .flow-note-right{right:calc(var(--micelio-input-side,25%) - 102px - clamp(118px,14%,170px))}
+.process-frame.is-bioplasticos-flow .flow-note-group{top:calc(32% - 38px)}
+.process-frame.is-bioplasticos-flow .flow-note-left{left:0}
+.process-frame.is-bioplasticos-flow .flow-note-right{right:0}
+.process-frame.is-bioceramica-flow .flow-note-group{top:calc(40% - 38px)}
+.process-frame.is-bioceramica-flow .flow-note-left{left:0}
+.process-frame.is-bioceramica-flow .flow-note-right{right:0}
+@media(min-width:901px) and (max-width:1200px){.process-frame.is-micelio-flow .flow-note-left{left:calc(var(--micelio-input-side,25%) - 102px - 120px)}.process-frame.is-micelio-flow .flow-note-right{right:calc(var(--micelio-input-side,25%) - 102px - 120px)}}
+@media(min-width:901px) and (max-width:1000px){.process-frame.is-micelio-flow .flow-note-left{left:calc(var(--micelio-input-side,25%) - 102px - 90px)}.process-frame.is-micelio-flow .flow-note-right{right:calc(var(--micelio-input-side,25%) - 102px - 90px)}}
+@media(max-width:900px){.process-frame.is-micelio-flow .flow-note-group{top:42%}}
+@media(max-width:620px){.process-frame.is-micelio-flow .process-node:not(.is-inoculation-node){width:98px;height:98px}.process-frame.is-micelio-flow .is-inoculation-node{width:72px;height:72px}.process-frame.is-micelio-flow .is-inoculation-node .step-title{max-width:60px;font-size:8px}}
+
+.process-frame{border:0;border-radius:0;box-shadow:none;background:transparent}
+.process-frame .process-grid{display:none}
+
+.process-frame.is-celulosa-flow .is-fermentation-node{width:116px;height:116px;background:#e8f2df;border:1px solid #b9d4a9;color:#4c7548;box-shadow:0 6px 18px #385b331a}
+.process-frame.is-celulosa-flow .is-fermentation-node .step-title{max-width:86px;font-size:11px;line-height:1.25}
+@media(max-width:900px){.process-frame.is-celulosa-flow .is-fermentation-node{width:102px;height:102px}}
+@media(max-width:620px){.process-frame.is-celulosa-flow .is-fermentation-node{width:72px;height:72px}.process-frame.is-celulosa-flow .is-fermentation-node .step-title{max-width:60px;font-size:8px}}
+.process-node.step-biomascaras-photo{background-image:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,.16)),url("IMG_9438.JPEG");background-size:cover;background-position:center;color:#fff;border-color:#ffffff80}
+.process-node.step-tea-photo{background-image:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,.16)),url("Commodity-tea-leaves-VacQPack.webp");background-size:cover;background-position:center;color:#fff;border-color:#ffffff80}
+.process-node.step-bacteria-photo{background-image:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,.16)),url("Bacterias y levaduras.jpg");background-size:cover;background-position:center;color:#fff;border-color:#ffffff80}
+.process-node.step-hongos-photo{background-image:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,.16)),url("hongos.jpg");background-size:cover;background-position:center;color:#fff;border-color:#ffffff80}
+
+.orbit-lines circle{fill:none;stroke:#89ab9a;stroke-width:1.5}
+.orbit-lines circle.orbit-dash{stroke:#a9c5b7;stroke-dasharray:3 6}
+@media(max-width:620px){.home-view .central-logo{width:146px;height:146px}.topic-circle{width:100px;height:100px;margin:-50px 0 0 -50px}}
+
+.process-frame.is-bioceramica-flow{height:800px;min-height:800px;max-height:none}
+.process-frame.is-bioceramica-flow .process-edge{stroke-dasharray:2 7;stroke-linecap:round;opacity:.9}
+.process-frame.is-bioceramica-flow .is-cooking-node{width:116px;height:116px;background:#e8f2df;border:1px solid #b9d4a9;color:#4c7548;box-shadow:0 6px 18px #385b331a}
+.process-frame.is-bioceramica-flow .is-cooking-node .step-title{max-width:86px;font-size:11px;line-height:1.25}
+@media(max-width:900px){.process-frame.is-bioceramica-flow{height:900px;min-height:900px;max-height:none}.process-frame.is-bioceramica-flow .process-node:not(.is-cooking-node){width:144px;height:144px}.process-frame.is-bioceramica-flow .is-cooking-node{width:102px;height:102px}}
+@media(max-width:620px){.process-frame.is-bioceramica-flow .process-node:not(.is-cooking-node){width:96px;height:96px;padding:8px}.process-frame.is-bioceramica-flow .is-cooking-node{width:72px;height:72px}.process-frame.is-bioceramica-flow .is-cooking-node .step-title{max-width:60px;font-size:8px}}
+.process-frame.is-bioceramica-flow .process-arrows{z-index:3}
+.process-frame.is-bioplasticos-flow{height:800px;min-height:800px;max-height:none}
+.process-frame.is-bioplasticos-flow .process-edge{stroke-dasharray:2 7;stroke-linecap:round;opacity:.9}
+.process-frame.is-bioplasticos-flow .process-tip{display:none}
+.process-frame.is-bioplasticos-flow .is-mixing-node{width:116px;height:116px;background:#e8f2df;border:1px solid #b9d4a9;color:#4c7548;box-shadow:0 6px 18px #385b331a}
+.process-frame.is-bioplasticos-flow .is-mixing-node .step-title{max-width:86px;font-size:11px;line-height:1.25}
+.process-node.step-manton-photo{background-image:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,.16)),url("IMG_8275.JPEG");background-size:cover;background-position:center;color:#fff;border-color:#ffffff80}
+.process-node.step-manton-photo .step-description{color:#fff}
+.process-node.step-manton-photo .step-index{border-color:#ffffff80}
+.process-node.step-baldosas-photo{background-image:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,.16)),url("Baldosas.jpg");background-size:cover;background-position:center;color:#fff;border-color:#ffffff80}
+.process-node.step-baldosas-photo .step-description{color:#fff}
+.process-node.step-baldosas-photo .step-index{border-color:#ffffff80}
+@media(max-width:620px){.process-frame.is-bioplasticos-flow .process-node{width:106px;height:106px;padding:8px}.process-frame.is-bioplasticos-flow .process-node.expanded{width:min(260px,78vw);height:auto;min-height:190px;padding:18px}}
+.process-frame.is-bioplasticos-flow .step-index{display:none}
+
+/* Bioplásticos: four branches follow the reference diagram. */
+.process-frame.is-bioplasticos-flow .process-edge{stroke:#b5d829;stroke-width:2;stroke-dasharray:2 6}
+.process-frame.is-bioplasticos-flow .bioplastic-output-node{width:clamp(90px,14vw,160px);height:clamp(90px,14vw,160px)}
+.process-frame.is-bioplasticos-flow .step-biokit-node{background:#e8f2df;border-color:#d7e8c9;color:#164b43}
+.process-frame.is-bioplasticos-flow .flow-note-group{top:calc(20% - 38px)}
+@media(max-width:620px){
+  .process-frame.is-bioplasticos-flow .bioplastic-output-node{width:min(21vw,90px);height:min(21vw,90px);padding:5px}
+  .process-frame.is-bioplasticos-flow .bioplastic-output-node .step-title{font-size:clamp(8px,2.2vw,10px)}
+  .process-frame.is-bioplasticos-flow .flow-note-group{top:30%}
+}
+
+/* Steaming pot in the bioplastics mixing step. */
+.mixing-pot{display:block;width:40px;height:37px;flex:none;margin-bottom:2px;color:#4c7548}
+.mixing-pot svg{display:block;width:100%;height:100%;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.mixing-pot .pot-steam{animation:mixing-steam 2s ease-in-out infinite}
+.mixing-pot .pot-steam-two{animation-delay:.3s}
+.mixing-pot .pot-steam-three{animation-delay:.6s}
+@keyframes mixing-steam{0%,100%{opacity:.4;transform:translateY(2px)}50%{opacity:1;transform:translateY(-2px)}}
+.process-frame.is-bioplasticos-flow .is-mixing-node .step-hint{margin-top:3px}
+@media(max-width:620px){.mixing-pot{width:32px;height:29px;margin-bottom:1px}}
+@media(prefers-reduced-motion:reduce){.mixing-pot .pot-steam{animation:none}}
+
+/* Celulosa bacteriana follows the compact, dotted reference diagram. */
+.process-frame.is-celulosa-flow{height:700px;min-height:700px;max-height:none}
+.process-frame.is-celulosa-flow .process-edge{stroke:#b5d829;stroke-width:2;stroke-dasharray:2 6;stroke-linecap:round}
+.process-frame.is-celulosa-flow .flow-note-group{top:calc(25% - 38px)}
+.fermentation-icon{display:block;width:34px;height:34px;flex:none;margin-bottom:3px;color:#4c7548}
+.fermentation-icon svg{width:100%;height:100%;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.process-frame.is-celulosa-flow .is-fermentation-node .step-hint{margin-top:3px}
+@media(max-width:620px){
+  .process-frame.is-celulosa-flow{height:650px;min-height:650px}
+  .process-frame.is-celulosa-flow .flow-note-group{top:35%}
+  .fermentation-icon{width:25px;height:25px;margin-bottom:1px}
+}
+
+/* Celulosa heading from the reference: brand, cultivated label, title, subtitle. */
+.celulosa-process-type .cultivated-icon{display:none}
+.process-heading.is-celulosa .celulosa-process-brand{margin-bottom:14px;letter-spacing:.2px;color:#164b43}
+.process-heading.is-celulosa .celulosa-process-type{gap:7px;color:#164b43;font:800 11px/1.2 var(--display);text-transform:uppercase}
+.process-heading.is-celulosa .celulosa-process-type .steaming-bowl{display:none}
+.process-heading.is-celulosa .cultivated-icon{display:block;width:25px;height:25px;fill:#d9f5a4;stroke:#598b39;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.process-heading.is-celulosa #processTitle{margin:4px 0 4px;font-size:36px;line-height:1.08;letter-spacing:-1px;color:#164b43}
+.process-heading.is-celulosa #processSubtitle{font-size:12px;font-weight:600;color:#164b43}
+@media(max-width:620px){.process-heading.is-celulosa #processTitle{font-size:27px}.process-heading.is-celulosa #processSubtitle{font-size:10px;padding:0 12px}}
+
+/* Consistent headings across all material processes. */
+.process-heading .celulosa-process-brand{margin-bottom:14px;letter-spacing:.2px;color:#164b43}
+.process-heading .celulosa-process-type{gap:7px;color:#164b43;font:800 11px/1.2 var(--display);text-transform:uppercase}
+.process-heading.is-micelio .celulosa-process-type .steaming-bowl{display:none}
+.process-heading.is-micelio .cultivated-icon{display:block;width:25px;height:25px;fill:#d9f5a4;stroke:#598b39;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.process-heading #processTitle{margin:4px 0;font-size:36px;line-height:1.08;letter-spacing:-1px;color:#164b43}
+.process-heading #processSubtitle{font-size:12px;font-weight:600;color:#164b43}
+@media(max-width:620px){.process-heading #processTitle{font-size:27px}.process-heading #processSubtitle{font-size:10px;padding:0 12px}}
+
+/* Micelio reference: two inputs, inoculation, and a larger material circle. */
+.process-frame.is-micelio-flow{height:650px;min-height:650px;max-height:none}
+.process-frame.is-micelio-flow .process-edge{stroke:#b5d829;stroke-width:2;stroke-dasharray:2 6;stroke-linecap:round}
+.process-frame.is-micelio-flow .step-index,.process-frame.is-micelio-flow .process-tip{display:none}
+.process-frame.is-micelio-flow .is-inoculation-node .step-hint{margin-top:3px}
+.process-frame.is-micelio-flow .step-micelio-photo{width:210px;height:210px}
+.process-frame.is-micelio-flow .flow-note-group{top:calc(28% - 38px)}
+@media(max-width:900px){.process-frame.is-micelio-flow .step-micelio-photo{width:180px;height:180px}}
+@media(max-width:620px){
+  .process-frame.is-micelio-flow{height:600px;min-height:600px}
+  .process-frame.is-micelio-flow .step-micelio-photo{width:125px;height:125px}
+  .process-frame.is-micelio-flow .flow-note-group{top:40%}
+}
+.process-frame.is-bioceramica-flow .process-edge{stroke:#b5d829;stroke-width:2;stroke-dasharray:2 6;stroke-linecap:round}
+.process-frame.is-bioceramica-flow .step-index,.process-frame.is-bioceramica-flow .process-tip{display:none}
+.process-frame.is-bioceramica-flow .flow-note-group{top:calc(20% - 38px)}
+.process-frame.is-bioceramica-flow .is-cooking-node .step-hint{margin-top:3px}
+@media(max-width:620px){.process-frame.is-bioceramica-flow .flow-note-group{top:31%}}
+.process-frame.is-bioceramica-flow .flow-note-row span{white-space:pre-line}
+.process-frame.is-bioceramica-flow .flow-note-right .flow-note-row:nth-child(2){align-items:flex-start}
+.process-frame.is-bioceramica-flow .flow-note-left{left:5%}
+.process-frame.is-bioceramica-flow .flow-note-right{right:5%}
+@media(max-width:620px){
+  .process-frame.is-bioceramica-flow .flow-note-left{left:2%}
+  .process-frame.is-bioceramica-flow .flow-note-right{right:2%}
+}
+.home-view .orbit-lines circle{stroke:#b5d829;stroke-width:2;stroke-dasharray:2 6;stroke-linecap:round}
+
+/* Brighter greens and richer material photography throughout the visualization. */
+.home-view .orbit-lines circle,.process-frame .process-edge{stroke:#8cce12}
+.process-frame.is-celulosa-flow .is-fermentation-node,
+.process-frame.is-micelio-flow .is-inoculation-node,
+.process-frame.is-bioceramica-flow .is-cooking-node,
+.process-frame.is-bioplasticos-flow .is-mixing-node,
+.process-frame.is-bioplasticos-flow .step-biokit-node{background:#d8f2bd;border-color:#91c96f;color:#245f34}
+.cultivated-icon{fill:#c5f27a}
+.flow-note-icon{stroke:#23865b}
+.status-dot,.bottom-dot{background:#29a96b}
+.topic-circle[class*="topic-"],.process-node[class*="-photo"]{filter:saturate(1.3) contrast(1.04)}
+.process-frame.is-celulosa-flow .process-edge,.process-frame.is-micelio-flow .process-edge,.process-frame.is-bioceramica-flow .process-edge,.process-frame.is-bioplasticos-flow .process-edge{stroke:#8cce12}
+/* Stronger blue-green accents for Biocerámica. */
+.topic-circle.topic-bioceramica,.process-frame.is-bioceramica-flow .process-node{--tone-border:#00a6a4;--tone-text:#006b70}
+.process-frame.is-bioceramica-flow .flow-note-icon{stroke:#008d92}
+/* Bold, vivid dotted connections throughout the diagrams. */
+.home-view .orbit-lines circle,
+.process-frame.is-celulosa-flow .process-edge,
+.process-frame.is-micelio-flow .process-edge,
+.process-frame.is-bioceramica-flow .process-edge,
+.process-frame.is-bioplasticos-flow .process-edge{stroke:#70bd00;stroke-width:3;stroke-dasharray:2 7;stroke-linecap:round;opacity:1}
+.process-node.step-accesorios-photo{background-image:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,.16)),url("eeae20c6-b57c-4458-af43-23173f82157b.JPG");background-size:cover;background-position:center;color:#fff;border-color:#ffffff80}
+.process-node.step-totems-photo{background-image:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,.16)),url("IMG_6390.jpg");background-size:cover;background-position:center;color:#fff;border-color:#ffffff80}
+.process-node.step-gafas-photo{background-image:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,.16)),url("Gafas.jpg");background-size:cover;background-position:center;color:#fff;border-color:#ffffff80}
+.process-node.step-lamparas-photo{background-image:linear-gradient(rgba(255,255,255,.16),rgba(255,255,255,.16)),url("Lámparas colgantes de luz ámbar.png");background-size:cover;background-position:center;color:#fff;border-color:#ffffff80}
+/* Black process labels on brighter photographs. */
+.process-frame .process-node .step-title,.process-frame .process-node .step-hint,.process-frame .process-node .step-index{color:#000}
+.process-frame .process-node[class*="-photo"] .step-title,.process-frame .process-node[class*="-photo"] .step-hint{background:rgba(255,255,255,.84);border-radius:5px;padding:2px 4px}
+.home-view .orbit-lines circle{stroke:url(#orbit-colors)}
+.home-view .cooked-note strong{color:#ed700b}
+.home-view .cooked-note .steam,.home-view .cooked-note .bowl-rim,.home-view .cooked-note .bowl-base{stroke:#ed700b}
+.home-view .cooked-note .bowl-body{fill:#ffcf98;stroke:#ed700b}
+.core-species{left:50%;top:50%;transform:translate(-50%,-50%)}
+.core-species svg{animation:paw-breathe 2.8s ease-in-out infinite}
+@keyframes paw-breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+@media(max-width:620px){.home-view .central-logo .core-symbol{width:50px;gap:1px}.home-view .central-logo .core-symbol svg{width:21px;height:21px}.home-view .central-logo .core-symbol span{font-size:6px}}
+@media(prefers-reduced-motion:reduce){.core-species svg{animation:none}}
+.process-heading.is-bioplasticos .steaming-bowl .steam,.process-heading.is-bioplasticos .steaming-bowl .bowl-rim,.process-heading.is-bioplasticos .steaming-bowl .bowl-base,.process-heading.is-bioceramica .steaming-bowl .steam,.process-heading.is-bioceramica .steaming-bowl .bowl-rim,.process-heading.is-bioceramica .steaming-bowl .bowl-base{stroke:#ed700b}
+.process-heading.is-bioplasticos .steaming-bowl .bowl-body,.process-heading.is-bioceramica .steaming-bowl .bowl-body{fill:#ffcf98;stroke:#ed700b}
+.process-frame.is-bioplasticos-flow .mixing-pot,.process-frame.is-bioceramica-flow .mixing-pot{color:#ed700b}
+.process-heading.is-bioplasticos .celulosa-process-type span,.process-heading.is-bioceramica .celulosa-process-type span{color:#ed700b}
+.process-frame.is-bioplasticos-flow .is-mixing-node,.process-frame.is-bioceramica-flow .is-cooking-node{background:#ffe0b8;border-color:#f28b29;box-shadow:0 6px 18px #d46a1726}
+/* Arrange the five center symbols evenly around the badge. */
+.home-view .central-logo .core-symbol{left:auto;right:auto;top:auto;bottom:auto;transform:translate(-50%,-50%)}
+.home-view .central-logo .core-top{left:50%;top:15%}
+.home-view .central-logo .core-right{left:83%;top:39%}
+.home-view .central-logo .core-bottom{left:70%;top:79%}
+.home-view .central-logo .core-left{left:30%;top:79%}
+.home-view .central-logo .core-species{left:17%;top:39%}
+@media(max-width:620px){
+ .home-view .central-logo .core-symbol{width:48px}
+ .home-view .central-logo .core-top{top:16%}
+ .home-view .central-logo .core-right{left:82%}
+ .home-view .central-logo .core-species{left:18%}
+}
+.step-bubble.has-photo{display:grid;grid-template-columns:95px minmax(0,1fr);gap:12px;width:390px;max-width:calc(100% - 18px);align-items:start}
+.step-bubble.has-photo[hidden]{display:none}
+.step-bubble .bubble-photo{width:95px;min-height:110px;align-self:stretch;border-radius:9px;background-position:center;background-size:cover;background-repeat:no-repeat}
+@media(max-width:620px){.step-bubble.has-photo{grid-template-columns:70px minmax(0,1fr);gap:9px}.step-bubble .bubble-photo{width:70px;min-height:85px}}
+.process-heading.is-celulosa .celulosa-process-type span,.process-heading.is-micelio .celulosa-process-type span{color:#579b16}
+.home-view .cultivated-note strong{color:#579b16}
+.process-frame.is-bioplasticos-flow .flow-note-right .flow-note-row:nth-child(2){align-items:flex-start}
+.process-frame.is-bioplasticos-flow .flow-note-right small{display:block;margin-top:4px;font-size:.8em;line-height:1.35;font-weight:600}
+.home-view .topic-circle .topic-name,.home-view .topic-circle .topic-open{color:#000;background:rgba(255,255,255,.84);border-radius:5px;padding:2px 4px}
+.home-view .topic-circle .topic-index,.home-view .topic-circle::after{color:#000}
+.process-frame .process-node:not([class*="-photo"]){border-color:transparent}

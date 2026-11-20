@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f5f7f3" />
+  <title>SMARTINCIRCLES · Materiales circulares (vertical)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="main-visual.css" />
+  <link rel="stylesheet" href="project-cards.css" />
+  <link rel="stylesheet" href="kit-card.css" />
+  <link rel="stylesheet" href="portrait-visual.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="top-action" id="homeButton" type="button" hidden>⌂ <span>Todos los círculos</span></button>
+    </header>
+
+    <main>
+      <section class="view home-view is-active" id="homeView" aria-labelledby="mainTitle">
+        <div class="hero-copy"><div class="hero-wordmark"><img src="assets/logo-standard-smartincircles.png" alt="" /><span>SMARTINCIRCLES</span></div><h1 id="mainTitle">Descubre Nuestra Materioteca</h1><p class="palette-subtitle">Una paleta de posibilidades</p><p class="universe-subtitle">Explora nuestro universo de biomateriales</p></div>
+        <div class="orbit-stage" id="orbitStage" aria-label="Elige un sistema de biomateriales">
+          <svg class="orbit-lines" viewBox="0 0 600 600" aria-hidden="true"><defs><linearGradient id="orbit-colors" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="50%" stop-color="#f58220"/><stop offset="50%" stop-color="#70bd00"/></linearGradient></defs><circle cx="300" cy="300" r="284" /></svg>
+          <div class="orbit-glow"></div>
+          <div class="central-logo" aria-label="Territorio, recursos, personas y otras especies">
+            <div class="core-symbol core-species">
+              <svg viewBox="0 0 40 40" aria-hidden="true"><ellipse cx="9" cy="15" rx="3.5" ry="5"/><ellipse cx="16" cy="9" rx="3.5" ry="5"/><ellipse cx="24" cy="9" rx="3.5" ry="5"/><ellipse cx="31" cy="15" rx="3.5" ry="5"/><path d="M10 28c0-4 4-5 6-8 2-3 6-3 8 0 2 3 6 4 6 8 0 5-5 6-10 4-5 2-10 1-10-4Z"/></svg>
+              <span>Otras especies</span>
+            </div>
+            <div class="core-symbol core-top">
+              <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 36s13-13.3 13-22A13 13 0 1 0 7 14c0 8.7 13 22 13 22Z"/><circle cx="20" cy="14" r="4.5"/></svg>
+              <span>Territorio</span>
+            </div>
+            <div class="core-symbol core-right">
+              <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M31.5 15A13 13 0 0 0 9 10l-3 3"/><path d="M6 7v6h6M8.5 25A13 13 0 0 0 31 30l3-3"/><path d="M34 33v-6h-6"/></svg>
+              <span>Recursos</span>
+            </div>
+            <div class="core-symbol core-bottom">
+              <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="11" r="6"/><path d="M8 34v-4a12 12 0 0 1 24 0v4Z"/></svg>
+              <span>Personas</span>
+            </div>
+            <div class="core-symbol core-left">
+              <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 12c-4-3-9-4-15-3v22c6-1 11 0 15 3 4-3 9-4 15-3V9c-6-1-11 0-15 3Z"/><path d="M20 12v22"/></svg>
+              <span>Personas</span>
+            </div>
+          </div>
+          <div class="topic-circles" id="topicCircles"></div>
+          <div class="cooked-note" aria-label="Materiales Cocinados. Transformar Ingredientes">
+            <svg class="steaming-bowl" viewBox="0 0 72 54" aria-hidden="true">
+              <path class="steam steam-one" d="M24 22c-5-5 4-7 0-12" />
+              <path class="steam steam-two" d="M36 21c-5-5 4-7 0-12" />
+              <path class="steam steam-three" d="M48 22c-5-5 4-7 0-12" />
+              <path class="bowl-rim" d="M15 27h42" />
+              <path class="bowl-body" d="M18 29c1 12 8 19 18 19s17-7 18-19H18Z" />
+              <path class="bowl-base" d="M29 51h14" />
+            </svg>
+            <strong>Materiales Cocinados</strong>
+            <span>Transformar Ingredientes</span>
+          </div>
+          <div class="cultivated-note" aria-label="Materiales Cultivados. Colaborar con organismos">
+            <svg class="connected-leaves" viewBox="0 0 72 54" aria-hidden="true">
+              <path class="leaf-stem" d="M35 48C35 34 36 24 42 12" />
+              <path class="leaf-vein" d="M36 36C29 31 24 26 18 20M39 25C46 23 52 19 57 13" />
+              <path class="leaf-shape leaf-one" d="M35 35C22 38 12 31 11 17c13-2 23 4 24 18Z" />
+              <path class="leaf-shape leaf-two" d="M39 24C38 12 45 5 59 5c1 12-6 20-20 19Z" />
+            </svg>
+            <strong>Materiales Cultivados</strong>
+            <span>Colaborar con organismos</span>
+          </div>
+          <div class="orbit-note"><span class="note-spark">✳</span> Elige un círculo para explorar su proceso</div>
+        </div>
+        <section class="kit-section" aria-label="Kit de Biomateriales">
+          <article class="kit-card">
+            <div class="kit-toggle">
+              <span class="kit-art" role="img" aria-label="Ilustración animada de un Biokit"><span class="project-biokit-scene"><span class="project-biokit-illustration">BIOKIT</span><span class="biokit-dish"></span><span class="biokit-orange"></span></span></span>
+              <span class="kit-copy"><span class="kit-heading"><span class="kit-eyebrow">PROYECTO</span><strong>Biokit Bioplásticos</strong></span><span class="kit-tagline">Del territorio al bioplástico. Un pequeño laboratorio portátil para experimentar con biorresiduos locales y crear tus propios bioplásticos en casa.</span></span>
+            </div>
+            <div class="kit-details" id="kitDetails" hidden>
+              <p class="kit-price">24,99 euros</p>
+            </div>
+          </article>
+        </section>
+        <div class="home-bottom"><span><i class="bottom-dot"></i> DISEÑO INSPIRADO EN LOS CICLOS DE LA NATURALEZA</span><span>01 — 04</span></div>
+      </section>
+
+      <section class="view process-view" id="processView" aria-labelledby="processTitle" hidden>
+        <div class="process-heading">
+          <button class="back-button" id="backButton" type="button"><span>←</span> Todos los círculos</button>
+          <div class="process-kicker" id="processKicker"></div>
+          <div class="celulosa-process-brand" id="celulosaProcessBrand" hidden><img src="assets/logo-standard-smartincircles.png" alt="" /><span>SMARTINCIRCLES</span></div>
+          <div class="celulosa-process-type" id="celulosaProcessType" hidden>
+            <svg class="cultivated-icon" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15"/><path d="M9 20c0-7 5-11 14-12 0 9-4 15-10 15-2 0-4-1-4-3Zm2 4 9-10"/></svg>
+            <svg class="steaming-bowl" viewBox="0 0 72 54" aria-hidden="true">
+              <path class="steam steam-one" d="M24 22c-5-5 4-7 0-12" />
+              <path class="steam steam-two" d="M36 21c-5-5 4-7 0-12" />
+              <path class="steam steam-three" d="M48 22c-5-5 4-7 0-12" />
+              <path class="bowl-rim" d="M15 27h42" />
+              <path class="bowl-body" d="M18 29c1 12 8 19 18 19s17-7 18-19H18Z" />
+              <path class="bowl-base" d="M29 51h14" />
+            </svg>
+            <span>Material Cocinado</span>
+          </div>
+          <h1 id="processTitle"></h1>
+          <p id="processSubtitle">Un biomaterial que se crea a mezclar y cocinar distintos ingredientes</p>
+        </div>
+        <div class="process-frame" id="processFrame">
+          <div class="process-grid"></div>
+          <div class="process-stage" id="processStage">
+            <svg class="process-arrows" id="processArrows" aria-hidden="true"></svg>
+            <div class="process-nodes" id="processNodes"></div>
+            <aside class="celulosa-side-notes" id="celulosaSideNotes" aria-label="Contexto del proceso de celulosa bacteriana" hidden>
+              <div class="flow-note-group flow-note-left">
+                <div class="flow-note-row"><svg class="flow-note-icon resources-icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M31 16a12 12 0 0 0-21-5L7 14"/><path d="M7 8v6h6M9 24a12 12 0 0 0 21 5l3-3"/><path d="M33 32v-6h-6"/></svg><span>Recursos</span></div>
+                <div class="flow-note-row"><svg class="flow-note-icon book-icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 12c-4-3-9-4-15-3v22c6-1 11 0 15 3 4-3 9-4 15-3V9c-6-1-11 0-15 3Z"/><path d="M20 12v22"/><path class="book-page" d="M7 14c4-.5 7 .2 10 2v13c-3-1.8-6-2.5-10-2Z"/></svg><span>Cultivo y biofabricación</span></div>
+              </div>
+              <div class="flow-note-group flow-note-right">
+                <div class="flow-note-row"><svg class="flow-note-icon pin-icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 36s12-12.2 12-21A12 12 0 1 0 8 15c0 8.8 12 21 12 21Z"/><circle cx="20" cy="15" r="4"/></svg><span>Chamberí</span></div>
+                <div class="flow-note-row"><svg class="flow-note-icon people-icon" viewBox="0 0 48 40" aria-hidden="true"><circle cx="24" cy="10" r="4"/><circle cx="10" cy="14" r="3.5"/><circle cx="38" cy="14" r="3.5"/><path d="M15 34v-4a9 9 0 0 1 18 0v4M2 34v-3a8 8 0 0 1 12-7M46 34v-3a8 8 0 0 0-12-7"/></svg><span>Utane Smartincircles</span></div>
+              </div>
+            </aside>
+          </div>
+          <div class="project-cards" id="projectCards" hidden></div>
+          <div class="process-tip"><span>✳</span> Haz clic en cada círculo para leer el texto</div>
+        </div>
+        <div class="process-bottom"><span><i class="bottom-dot"></i> MATERIA · TRANSFORMACIÓN · NUEVOS USOS</span><button id="nextCircle" type="button">Siguiente sistema <span>→</span></button></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>SMARTINCIRCLES</span><span>Materiales circulares · exploración interactiva</span></footer>
+  </div>
+  <script src="main-visual.js"></script>
+</body>
+</html>

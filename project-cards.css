@@ -1,0 +1,304 @@
+/* Bioplásticos project cards — long skinny boxes below the diagram */
+.process-frame.has-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 18px;
+}
+
+.process-frame.has-projects .process-stage {
+  position: relative;
+  inset: auto;
+  min-height: 520px;
+  flex: 1;
+  width: 100%;
+  z-index: 1;
+}
+
+.process-frame.has-projects .project-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  width: 100%;
+}
+
+.process-frame.has-projects .project-cards .project-card {
+  position: relative;
+  flex: 1;
+  min-height: 150px;
+  height: 150px;
+  border: 1px solid #ffffff70;
+  border-radius: 13px;
+  overflow: hidden;
+  background-color: #506353;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 9px 24px #243b2d26;
+  color: #fff;
+  transition: min-height .24s, transform .2s, box-shadow .2s;
+  z-index: 3;
+}
+
+.process-frame.has-projects .project-cards .project-card.seafood-card {
+  height: 190px;
+  min-height: 190px;
+  background-color: #e3f2fd !important;
+  border-color: #9dc3e6 !important;
+  box-shadow: 0 9px 24px #243b2d1a;
+}
+
+.process-frame.has-projects .project-cards .project-card.seafood-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 13px 27px #243b2d26;
+}
+
+.process-frame.has-projects .project-cards .project-card:not(.seafood-card):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 13px 27px #243b2d30;
+}
+
+.project-toggle {
+  position: relative;
+  width: 100%;
+  min-height: 150px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  color: #fff;
+  background: none;
+  border: 0;
+  font-family: var(--font);
+  cursor: pointer;
+}
+
+.project-kicker {
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  opacity: .8;
+}
+
+.project-title {
+  font: 700 17px/1.2 var(--display);
+  letter-spacing: -.3px;
+  margin-top: 8px;
+}
+
+.project-subtitle {
+  font-size: 10px;
+  line-height: 1.45;
+  margin-top: 6px;
+  color: #ffffffd9;
+}
+
+.project-affordance {
+  position: absolute;
+  right: 14px;
+  top: 12px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #ffffff80;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+}
+
+.project-details {
+  border-top: 1px solid #ffffff60;
+  padding: 12px 18px 14px;
+  color: #fff;
+  font-size: 10px;
+  line-height: 1.55;
+  animation: fade-in .22s ease;
+}
+
+.project-details[hidden] {
+  display: none;
+}
+
+.project-details p {
+  margin: 9px 0 0;
+}
+
+.project-details strong {
+  display: block;
+  font-size: 7px;
+  letter-spacing: .9px;
+  text-transform: uppercase;
+  color: #ffffffc7;
+  margin-bottom: 2px;
+}
+
+.project-video {
+  display: inline-flex;
+  margin-top: 12px;
+  padding: 7px 10px;
+  border: 1px solid #ffffffa0;
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.project-video:hover {
+  background: #ffffff22;
+}
+
+.project-video.pending {
+  opacity: .75;
+  cursor: default;
+}
+
+.project-card.expanded {
+  min-height: 260px;
+}
+
+.project-card.expanded .project-toggle {
+  min-height: 120px;
+  padding-bottom: 12px;
+  justify-content: flex-end;
+}
+
+.project-card.expanded .project-title {
+  font-size: 17px;
+}
+
+.process-frame.has-projects .process-tip {
+  display: none;
+}
+
+/* Mobile: stack project cards vertically below diagram */
+@media (max-width: 1100px) {
+  .process-frame.has-projects {
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .process-frame.has-projects .process-stage {
+    min-height: 420px;
+    height: auto;
+  }
+
+  .process-frame.has-projects .project-cards {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .process-frame.has-projects .project-cards .project-card {
+    width: 100%;
+    min-height: 130px;
+    height: 130px;
+  }
+
+  .project-toggle {
+    min-height: 130px;
+  }
+}
+
+/* The Bioplásticos projects form three horizontal rows beneath the flow. */
+.process-frame.is-bioplasticos-flow.has-projects{height:auto;min-height:0;max-height:none;padding:0 0 24px}
+.process-frame.is-bioplasticos-flow.has-projects .process-stage{height:650px;min-height:650px;flex:none}
+.process-frame.is-bioplasticos-flow .project-cards{display:flex;flex-direction:column;gap:8px;max-width:1000px;margin:0 auto}
+.process-frame.is-bioplasticos-flow .project-card{display:grid;grid-template-columns:22% 1fr;min-height:76px;height:auto;flex:none;border:0;border-radius:40px;background:#edf6e2;color:#164b43;box-shadow:none;overflow:hidden}
+.process-frame.is-bioplasticos-flow .project-card:hover{box-shadow:none;transform:none}
+.process-frame.is-bioplasticos-flow .project-image{min-height:76px;margin:5px;border-radius:36px;background-color:#d6e9c6;background-position:center;background-size:cover}
+.process-frame.is-bioplasticos-flow .project-image.biokit-can{background:#d8e9c9}
+.process-frame.is-bioplasticos-flow .project-image.biokit-can::after{content:'BIOKIT';display:grid;place-items:center;height:100%;color:#164b43;font:800 13px var(--display);letter-spacing:1px}
+.process-frame.is-bioplasticos-flow .project-toggle{display:grid;grid-template-columns:minmax(130px, .8fr) 1.4fr 28px;grid-template-rows:auto auto;column-gap:18px;align-content:center;align-items:center;min-height:76px;padding:10px 18px;color:#164b43}
+.process-frame.is-bioplasticos-flow .project-kicker{grid-column:1;grid-row:1;font-size:8px;color:#577355}
+.process-frame.is-bioplasticos-flow .project-title{grid-column:1;grid-row:2;margin:0;font-size:15px}
+.process-frame.is-bioplasticos-flow .project-subtitle{grid-column:2;grid-row:1 / 3;margin:0;padding-left:18px;border-left:1px solid #a9c39c;color:#164b43;font-size:10px}
+.process-frame.is-bioplasticos-flow .project-affordance{position:static;grid-column:3;grid-row:1 / 3;border-color:#73966d;font-size:16px}
+.process-frame.is-bioplasticos-flow .project-details{grid-column:1 / -1;padding:12px 24px 18px;border-color:#c6dbba;color:#164b43}
+.process-frame.is-bioplasticos-flow .project-details strong,.process-frame.is-bioplasticos-flow .project-video{color:#164b43;border-color:#9ab394}
+@media(max-width:620px){
+  .process-frame.is-bioplasticos-flow.has-projects .process-stage{height:650px;min-height:650px}
+  .process-frame.is-bioplasticos-flow .project-card{grid-template-columns:24% 1fr;border-radius:24px}
+  .process-frame.is-bioplasticos-flow .project-toggle{grid-template-columns:1fr 24px;gap:2px 8px;padding:10px}
+  .process-frame.is-bioplasticos-flow .project-title{font-size:13px}
+  .process-frame.is-bioplasticos-flow .project-subtitle{grid-column:1;grid-row:3;padding:0;border:0;font-size:9px}
+  .process-frame.is-bioplasticos-flow .project-affordance{grid-column:2;grid-row:1 / 4}
+}
+
+/* Compact project thumbnails and a small illustrated Biokit. */
+.process-frame.is-bioplasticos-flow .project-card{grid-template-columns:140px 1fr}
+.process-frame.is-bioplasticos-flow .project-image{width:112px;min-height:0;height:56px;align-self:center;justify-self:center;margin:10px;border-radius:28px}
+.process-frame.is-bioplasticos-flow .project-image.biokit-can{display:grid;place-items:center;background:#d8e9c9}
+.process-frame.is-bioplasticos-flow .project-image.biokit-can::after{content:none}
+.project-biokit-illustration{position:relative;display:grid;place-items:center;width:43px;height:37px;border:1px solid #9b7046;border-radius:4px 4px 8px 8px;background:linear-gradient(90deg,#b98554,#e7c39a 20%,#d3a371 75%,#ac794b);box-shadow:0 3px 4px #39563835;color:#164b43;font:800 7px var(--display);letter-spacing:.3px;animation:biokit-float 3s ease-in-out infinite}
+.project-biokit-illustration::before{content:'';position:absolute;left:-2px;right:-2px;top:-4px;height:6px;border:1px solid #95704e;border-radius:50%;background:#f0d7b5}
+.project-biokit-illustration::after{content:'';position:absolute;left:5px;right:5px;top:10px;bottom:7px;border-radius:1px;background:#f8f4df;z-index:-1}
+@keyframes biokit-float{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-3px) rotate(2deg)}}
+@media(max-width:620px){
+  .process-frame.is-bioplasticos-flow .project-card{grid-template-columns:90px 1fr}
+  .process-frame.is-bioplasticos-flow .project-image{width:72px;height:48px;margin:8px}
+}
+@media(prefers-reduced-motion:reduce){.project-biokit-illustration{animation:none}}
+
+/* Keep the closed rows as shallow as their thumbnails. */
+.process-frame.is-bioplasticos-flow.has-projects .project-cards .project-card{min-height:56px;height:auto;background:#e8f2df}
+.process-frame.is-bioplasticos-flow .project-image{margin:0}
+.process-frame.is-bioplasticos-flow .project-toggle{min-height:56px;padding-top:4px;padding-bottom:4px}
+.process-frame.is-bioplasticos-flow .project-card.expanded .project-toggle{min-height:56px;padding-bottom:4px;justify-content:initial}
+@media(max-width:620px){
+  .process-frame.is-bioplasticos-flow.has-projects .project-cards .project-card{min-height:48px}
+  .process-frame.is-bioplasticos-flow .project-toggle{min-height:48px;padding:4px 8px}
+}
+.process-frame.is-bioplasticos-flow .project-toggle:not(button){cursor:default}
+.process-frame.is-bioplasticos-flow .step-biokit-node{cursor:default}
+.project-video{background:transparent;font-family:inherit;cursor:pointer}
+
+/* Circular thumbnails for the three Bioplásticos project rows. */
+.process-frame.is-bioplasticos-flow .project-image{width:56px;height:56px;border-radius:50%}
+@media(max-width:620px){.process-frame.is-bioplasticos-flow .project-image{width:48px;height:48px}}
+.process-frame.is-bioplasticos-flow .project-image{width:70px;height:70px}
+.process-frame.is-bioplasticos-flow.has-projects .project-cards .project-card{min-height:78px}
+.process-frame.is-bioplasticos-flow .project-toggle{min-height:78px}
+@media(max-width:620px){
+  .process-frame.is-bioplasticos-flow .project-image{width:58px;height:58px}
+  .process-frame.is-bioplasticos-flow.has-projects .project-cards .project-card{min-height:66px}
+  .process-frame.is-bioplasticos-flow .project-toggle{min-height:66px}
+}
+
+/* Seafood for Thought strip, matching the Biocerámica reference. */
+.process-frame.is-bioceramica-flow.has-projects{height:auto;min-height:0;max-height:none;padding:0 0 24px}
+.process-frame.is-bioceramica-flow.has-projects .process-stage{height:700px;min-height:700px;flex:none}
+.process-frame.is-bioceramica-flow.has-projects .project-cards{width:min(1000px,100%);margin:0 auto}
+.process-frame.is-bioceramica-flow.has-projects .project-cards .seafood-card{height:auto;min-height:96px;border:0!important;border-radius:22px;background:#bce4d9!important;box-shadow:none}
+.seafood-link{display:grid;grid-template-columns:160px 1fr 40px;align-items:center;gap:22px;min-height:96px;padding:8px 24px;color:#164b43;text-decoration:none}
+.seafood-image{height:80px;border-radius:12px;background:url('SEAFOOD FOR THOUGHT IMAGE.jpg') center/cover}
+.seafood-copy{display:flex;flex-direction:column;gap:3px;padding-left:22px;border-left:2px solid #4d8877;font-size:12px;line-height:1.35}
+.seafood-copy strong{font:italic 800 20px/1.1 var(--display)}
+.seafood-kicker{font-size:8px;font-weight:700;letter-spacing:1.5px}
+.seafood-arrow{display:grid;place-items:center;width:30px;height:30px;border:1px solid #164b43;border-radius:50%;font-size:19px}
+@media(max-width:620px){
+ .process-frame.is-bioceramica-flow.has-projects .process-stage{height:650px;min-height:650px}
+ .seafood-link{grid-template-columns:70px 1fr 26px;gap:10px;padding:8px}
+ .seafood-image{height:68px}
+ .seafood-copy{padding-left:10px;font-size:10px}
+ .seafood-copy strong{font-size:15px}
+ .seafood-arrow{width:25px;height:25px;font-size:16px}
+}
+.process-frame.is-bioplasticos-flow.has-projects .project-cards .project-card{background:#dff2c9}
+.process-frame.is-bioplasticos-flow.has-projects .project-cards .seafood-card{background:#a8e6d4!important}
+.process-frame.is-bioceramica-flow.has-projects .project-cards .seafood-card{background:#a8e6d4!important}
+.project-image:not(.biokit-can),.seafood-image{filter:saturate(1.3) contrast(1.04)}
+/* More vivid blue-green for the Biocerámica project strip. */
+.process-frame.is-bioceramica-flow.has-projects .project-cards .seafood-card{background:#76d8d1!important}
+.seafood-copy{border-left-color:#078f91}
+.seafood-arrow{border-color:#006f78;color:#006f78}
+
+/* Orange Biokit, dish and citrus inspired by the reference illustration. */
+.project-biokit-scene{position:relative;display:block;width:72px;height:51px;animation:biokit-float 3s ease-in-out infinite}
+.project-biokit-illustration{position:absolute;left:25px;top:3px;width:28px;height:43px;border:1px solid #dc711a;border-radius:5px 5px 7px 7px;background:linear-gradient(90deg,#ed7a16,#ffbf64 45%,#f88a20);box-shadow:0 3px 4px #39563835;color:#164b43;font-size:6px;z-index:2;animation:none}
+.project-biokit-illustration::before{top:-3px;left:-1px;right:-1px;height:6px;border:1px solid #e87517;background:#ffac4c}
+.project-biokit-illustration::after{content:none}
+.biokit-dish{position:absolute;left:2px;bottom:5px;width:27px;height:12px;border:1px solid #e78833;border-radius:50%;background:linear-gradient(#ffc270 25%,#f78b28 30%);box-shadow:0 2px 2px #39563825;z-index:3}
+.biokit-orange{position:absolute;right:1px;bottom:5px;width:20px;height:20px;border:2px solid #f08a00;border-radius:50%;background:radial-gradient(circle at 40% 35%,#ffcf42,#ff9200 70%);box-shadow:0 2px 2px #39563825;z-index:3}
+@media(prefers-reduced-motion:reduce){.project-biokit-scene{animation:none}}
+.project-biokit-scene,.project-biokit-illustration{animation:none}
